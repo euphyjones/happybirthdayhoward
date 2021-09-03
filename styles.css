@@ -1,0 +1,255 @@
+body {
+    background: #1c1c1c;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 9px;
+    color: #070707;
+    letter-spacing: 1px;
+}
+
+.background {
+   max-width:100%;
+   height:auto;
+
+}
+
+.ayaka { 
+   height: 620px;
+   position: absolute;
+   left: 320px;
+   bottom: 0px;
+   margin-block-end: 0;
+   }
+
+.dialogue {
+   width: 900px;
+   height: 130px;
+   background: linear-gradient(180deg, rgba(36, 36, 36, 0.1) 0%, rgba(39, 39, 39, 0.68) 5%);
+   bottom: 0px;
+   position: absolute;
+}
+
+
+/* fadeInRight */
+
+@-webkit-keyframes fadeInRight {
+   from {
+       opacity:0;
+       -webkit-transform: translatex(10px);
+       -moz-transform: translatex(10px);
+       -o-transform: translatex(10px);
+       transform: translatex(10px);
+   }
+   to {
+       opacity:1;
+       -webkit-transform: translatex(0);
+       -moz-transform: translatex(0);
+       -o-transform: translatex(0);
+       transform: translatex(0);
+   }
+}
+@-moz-keyframes fadeInRight {
+   from {
+       opacity:0;
+       -webkit-transform: translatex(10px);
+       -moz-transform: translatex(10px);
+       -o-transform: translatex(10px);
+       transform: translatex(10px);
+   }
+   to {
+       opacity:1;
+       -webkit-transform: translatex(0);
+       -moz-transform: translatex(0);
+       -o-transform: translatex(0);
+       transform: translatex(0);
+   }
+}
+@keyframes fadeInRight {
+   from {
+       opacity:0;
+       -webkit-transform: translatex(300px);
+       -moz-transform: translatex(300px);
+       -o-transform: translatex(300px);
+       transform: translatex(300px);
+   }
+   to {
+       opacity:1;
+       -webkit-transform: translatex(0);
+       -moz-transform: translatex(0);
+       -o-transform: translatex(0);
+       transform: translatex(0);
+   }
+}
+.in-right {
+   -webkit-animation-name: fadeInRight;
+   -moz-animation-name: fadeInRight;
+   -o-animation-name: fadeInRight;
+   animation-name: fadeInRight;
+   -webkit-animation-fill-mode: both;
+   -moz-animation-fill-mode: both;
+   -o-animation-fill-mode: both;
+   animation-fill-mode: both;
+   -webkit-animation-duration: 3s;
+   -moz-animation-duration: 3s;
+   -o-animation-duration: 3s;
+   animation-duration: 3s;
+   -webkit-animation-delay: 1s;
+   -moz-animation-delay: 1s;
+   -o-animation-duration: 1s;
+   animation-delay: 1s;
+}
+
+/* end */
+
+
+@keyframes float {                                     
+   0% {                                     
+    transform: translatey(0px);                                     
+   }                                     
+   50% {                                     
+    transform: translatey(-3px);                                     
+   }                                     
+   100% {                                     
+    transform: translatey(0px);                                     
+   }                                     
+  }                                      
+                                       
+
+.heart {
+   width: 16px;
+   position: absolute;
+   bottom: 17px;
+   text-align: center;
+   opacity: 0.85;
+   animation: float 0.8s ease-in-out infinite;
+}
+
+
+.text-dialogue{
+   width: 500px;
+   font-size: .89rem;
+   font-family: 'Merriweather', serif;
+   font-weight: 700;
+   text-transform: initial;
+   color: #ebebeb;
+   letter-spacing: 0;
+   line-height: 1.5;
+   text-align: center;
+   margin-block-start: 0;
+}
+
+.ayaka-name{
+    width: 900px;
+    font-size: .89rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-transform: initial;
+    color: #F2B705;
+    letter-spacing: 0;
+    text-align: center;
+    margin-block-end: 0;
+ }
+
+.gradient-line{ 
+    width: 500px;
+    display: block;
+    border: none;
+    height: 1px;
+    background: #F2B705;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.01), #F2B705, #F2B705, #F2B705, rgba(39, 39, 39, 0.01));
+}
+
+::-webkit-scrollbar {
+  display:none;
+}
+
+
+.bgim {
+    width: 900px;
+    height: 500px; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -295px;
+    margin-left: -460px;
+    z-index: 1!important;
+    overflow: hidden;
+}
+
+
+.galaxy {
+    width: 1000px; 
+    height: 700px; 
+    overflow: hidden; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%;
+    margin-left: -500px; 
+    margin-top: -350px;
+    z-index: 99;
+}
+
+
+::selection {
+  background: #6C9DD6; 
+}
+
+
+.sidebar {
+width: 900px; height: 500px; position: absolute; background-color: #f3f3f3;
+}
+
+.sidebar-img {
+width: 900px; height: 500px;    
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6C9DD6;
+    color: white;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.icon {
+   color: white;
+}
+
+
+ #player-container  #play-pause {
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    right: 472px;
+    text-indent: -999999px;
+    height: 20px;
+    width: 20px;
+    z-index: 2;
+    padding: 18px 18px;
+    background-image: url(https://u.cubeupload.com/byulharang/playbutton.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 100%;
+    bottom: 15px;
+    opacity: 0.5;
+    
+      }
+  .play {
+    background-image: url(https://u.cubeupload.com/byulharang/playbutton.png);
+      }
+  .pause {
+    background-image: url(https://u.cubeupload.com/byulharang/pause.png)!important;
+      }
+  
